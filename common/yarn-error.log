@@ -1,0 +1,45 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/Cellar/yarn/1.19.0/libexec/bin/yarn.js add -D @types/yup
+
+PATH: 
+  /Library/Frameworks/Python.framework/Versions/3.7/bin:/Library/Frameworks/Python.framework/Versions/3.7/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Frameworks/Python.framework/Versions/3.7/bin
+
+Yarn version: 
+  1.19.0
+
+Node version: 
+  10.16.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  SyntaxError: /Users/kevingutierrez/abb/packages/common/package.json: Unexpected string in JSON at position 109
+      at JSON.parse (<anonymous>)
+      at /usr/local/Cellar/yarn/1.19.0/libexec/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/usr/local/Cellar/yarn/1.19.0/libexec/lib/cli.js:304:30)
+      at /usr/local/Cellar/yarn/1.19.0/libexec/lib/cli.js:315:13
+
+npm manifest: 
+  {
+    "name": "@abb/common",
+    "version": "1.0.0",
+    "main": "dist/index.js",
+    "typings": "dist/index.d.ts"
+    "license": "MIT",
+    "devDependencies": {
+      "tslint": "^5.20.0",
+      "tslint-config-prettier": "^1.18.0",
+      "typescript": "^3.6.4"
+    },
+    "dependencies": {
+      "yup": "^0.27.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
